@@ -2,6 +2,12 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
+:root {
+  --white: #fff;
+  --light-blue: #8bb3c6;
+  --dark-blue: #153a4b;
+}
+
 *,
 *::before,
 *::after {
@@ -34,6 +40,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--dark-blue) ;
 }
 
 a:not([class]) {
@@ -57,7 +64,7 @@ select {
   html:focus-within {
    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
